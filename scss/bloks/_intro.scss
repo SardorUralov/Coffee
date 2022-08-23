@@ -1,0 +1,244 @@
+.intro {
+    margin: 0;
+    margin-bottom: 351px;
+    position: relative;
+    width: 1280px;
+    height: 577px;
+    background: $darkgray2;
+    border-radius: 10px;
+
+    &__title {
+        margin:0 auto;
+        padding-top: 90px;
+        width: 329px;
+        height: 28px;
+        @include text ('Fraunces', normal, 900, 40px, 48px, #FEFCF7)
+    }
+
+    &__text {
+        margin:0 auto;
+        text-align: center;
+        padding-top: 90px;
+        width: 540px;
+        height: 80px;
+        @include text ('Barlow', normal, 400, 16px, 26px, #FEFCF7)
+    }
+
+    &__linker {
+        position: absolute;
+        top: 55%;
+        left: 3%;
+        right: 0%;
+        bottom: 0%;
+        display: flex;
+        margin: 0;
+    }
+
+    &__link {
+        margin: 0;
+        margin-left: 30px;
+        list-style: none;
+        width: 350px;
+        height: 382px;
+        text-align: center;
+        padding: 72px 48px 48px 47px;
+        background: $blue3;
+        border-radius: 8px;
+    }
+
+    &__link:first-child {
+        margin-left: 0;
+    }
+
+    &__link-title {
+        margin: 0;
+        margin-top: 56px;
+        width: 255px;
+        height: 32px;
+        @include text ('Fraunces', normal, 900, 24px, 32px, #FEFCF7)
+    }
+
+    &__link-text {
+        margin: 0;
+        margin-top: 24px;
+        width: 255px;
+        height: 78px;
+        @include text ('Barlow', normal, 400, 16px, 26px, #FEFCF7)
+    }
+}
+
+@media only screen and ( max-width:800px) {
+    .intro {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 391px;
+        position: relative;
+        width: 688px;
+        height: 573px;
+        background: $darkgray2;
+        border-radius: 10px;
+
+        &__title {
+            margin:0 auto;
+            padding-top: 30px;
+            width: 264px;
+            height: 48px;
+            @include text ('Fraunces', normal, 900, 32px, 48px, #FEFCF7)
+        }
+    
+        &__text {
+            margin:0 auto;
+            text-align: center;
+            padding-top: 30px;
+            width: 540px;
+            height: 77px;
+            @include text ('Barlow', normal, 400, 15px, 25px, #FEFCF7)
+        }
+
+        &__linker {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 40%;
+            left: 3%;
+            right: 0%;
+            bottom: 0%;
+            display: flex;
+            margin: 0;
+        }
+    
+        &__link-menu {
+            display: flex;
+        }
+    
+        &__link {
+            margin: 0;
+            margin-top: 24px;
+            list-style: none;
+            width: 573px;
+            height: 180px;
+            padding: 31px 48px 41px 70px;
+            text-align: start;
+            background: $blue3;
+            border-radius: 8px;
+        }
+
+
+        &__link-img {
+            width: 56px;
+            height: 56px;
+            margin-top: 22px;
+        }
+    
+    
+        &__link-title {
+            margin: 0;
+            margin-left: 55px;
+            width: 255px;
+            height: 32px;
+            @include text ('Fraunces', normal, 900, 24px, 32px, #FEFCF7)
+        }
+    
+        &__link-text {
+            margin: 0;
+            margin-left: 55px;
+            margin-top: 16px;
+            width: 344px;
+            height: 50px;
+            @include text ('Barlow', normal, 400, 16px, 26px, #FEFCF7)
+        }    
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .intro {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 717px;
+        position: relative;
+        text-align: center;
+        width: 327px;
+        height: 902px;
+        background: $darkgray2;
+        border-radius: 10px;
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__title {
+            margin:0 auto;
+            padding-top: 80px;
+            width: 279px;
+            height: 28px;
+            @include text ('Fraunces', normal, 900, 28px, 28px, #FEFCF7)
+        }
+
+        &__text {
+            margin:0 auto;
+            text-align: center;
+            padding-top: 60px;
+            width: 279px;
+            height: 125px;
+            @include text ('Barlow', normal, 400, 15px, 25px, #FEFCF7)
+        }
+
+        &__linker {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 33%;
+            left: -5%;
+            right: 0%;
+            bottom: 0%;
+            display: flex;
+            margin: 0;
+        }
+
+        &__link {
+            margin: 0;
+            margin-top: 24px;
+            list-style: none;
+            width: 279px;
+            height: 382px;
+            padding: 72px 15px 51px 15px;
+            text-align: start;
+            background: $blue3;
+            border-radius: 8px;
+        }
+
+        
+        &__link-img {
+            width: 72px;
+            height: 72px;
+            margin-top: 15px;
+            margin-left: 86px;
+            margin-bottom: 56px;
+        }
+    
+
+        &__link-menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link-title {
+            margin: 0;
+            text-align: center;
+            width: 255px;
+            height: 32px;
+            @include text ('Fraunces', normal, 900, 24px, 32px, #FEFCF7)
+        }
+    
+        &__link-text {
+            margin: 0;
+            margin-left: 25px;
+            margin-top: 16px;
+            text-align: center;
+            width: 212px;
+            height: 75px;
+            @include text ('Barlow', normal, 400, 15px, 25px, #FEFCF7)
+        }         
+    }
+}

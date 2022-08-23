@@ -1,0 +1,63 @@
+.site-header {
+    margin: 0;
+    margin: 44px 0;
+    display: flex;
+    justify-content: space-between; 
+
+    &__logom {
+        display: none;
+    }
+
+    &__menu {
+        margin: 0;
+        list-style: none;
+        display: flex;  
+    }
+
+    &__link {
+        margin: 0;
+        padding-left: 33px;
+        text-decoration: none;
+        @include text ('Barlow', normal, 700, 12px, 15px, #83888F)
+    }
+
+    &__link:first {
+        padding-left: 0px;
+    }
+
+    &__link:hover {
+        color: $darkgray;
+    }
+}
+
+@media only screen and ( max-width:800px) {
+    .site-header {
+        width: 689px;
+        height: 26px;
+    }
+}
+
+@media only screen and ( max-width:400px ) {
+    .site-header {
+        width: 357px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        &__logos {
+            width: 163px;
+            height: 18px;
+        }
+
+        &__logom {
+            margin-left: 70px;
+            display: flex;
+        }
+
+        &__link {
+            display: none;
+        }
+    }
+}

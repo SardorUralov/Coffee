@@ -1,0 +1,114 @@
+.site-nav {
+   margin: 0;
+
+   &__item {
+    margin: 0;
+    margin-top: 115px;
+    display: flex;
+    background-image: url(../images/hero-back.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+   }
+
+   &__link {
+    margin: 0;
+    margin-top: 120px;
+    margin-bottom: 222px;
+    padding-left: 40px;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+   }
+
+   &__title {
+    margin: 0 auto;
+    margin-top: 71px;
+    margin-bottom: 24px;
+    width: 255px;
+    height: 32px;
+    @include text ('Fraunces', normal, 900, 24px, 32px,  #333D4B)
+   }
+
+   &__text {
+    margin: 0 auto;
+    width: 255px;
+    height: 78px;
+    @include text ('Barlow', normal, 400, 16px, 26px, #333D4B)
+   }
+}
+
+@media only screen and ( max-width: 800px) {
+   .site-nav {
+       
+      &__item {
+         margin: 0;
+         margin-top: 115px;
+         display: flex;
+         flex-direction: column;
+         background-image: url(../images/nav-back.svg);
+         background-repeat: no-repeat;
+         background-position: top;
+         background-size: auto;
+      }
+
+      &__left {
+         display: flex;
+      }
+      
+      &__link {
+         margin: 0;
+         margin-top: 32px;
+         margin-bottom: 32px;
+         padding-left: 10px;
+         display: flex;
+         text-align: center;
+         list-style-type: none;
+      }
+
+      &__title {
+         margin: 0 auto;
+         margin-top: 21px;
+         margin-bottom: 24px;
+         width: 255px;
+         height: 32px;
+         @include text ('Fraunces', normal, 900, 24px, 32px,  #333D4B)
+      }
+   }  
+}
+
+@media only screen and ( max-width:400px ) {
+   .site-nav {
+
+      &__item {
+         margin: 0;
+         margin-top: 115px;
+         display: flex;
+         flex-direction: column;
+         background-image: url(../images/nav-background.svg);
+         background-repeat: no-repeat;
+         background-position: top;
+         background-size: auto;
+      }
+
+
+      &__left {
+         display: flex;
+         flex-direction: column;
+      }
+
+      &__link {
+         margin: 0;
+         margin-top: 32px;
+         margin-bottom: 48px;
+         padding: 0;
+         display: flex;
+         text-align: center;
+         list-style-type: none;
+      }
+
+      &__img {
+         margin: 0 auto;
+      }
+   }
+}

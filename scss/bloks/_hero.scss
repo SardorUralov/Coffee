@@ -1,0 +1,109 @@
+.hero {
+    margin: 0;
+    padding: 110px 702px 116px 85px;
+    background-image: url("../images/coffee-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 39px;
+        width: 493px;
+        height: 145px;
+        @include text ('Fraunces', normal, 800, 72px, 72px, #FEFCF7)
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 56px;
+        width: 445px;
+        height: 78px;
+        @include text ('Barlow', normal, 400, 16px, 26px, #FEFCF7)
+    }
+
+    &__link {
+        width: 217px;
+        height: 56px;
+        padding: 15px 31px;
+        text-decoration: none;
+        background-color: $blue;
+        border-radius: 10px;
+        @include text ('Fraunce', normal, 800, 18px, 25px,  #FEFCF7)
+    }
+
+    &__link:hover {
+        background-color: $blue2;
+    }
+
+}
+
+@media only screen and ( max-width:800px) {
+
+    .hero {
+        width: 689px;
+        height: 500px;
+        padding: 104px 233px 104px 58px;
+        background-image: url("../images/coffee-table.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+
+        &__title {
+            margin: 0;
+            margin-bottom: 24px;
+            width: 329px;
+            height: 97px;
+            @include text ('Fraunces', normal, 800, 48px, 48px, #FEFCF7)
+        }
+
+        &__text {
+            margin: 0;
+            margin-bottom: 40px;
+            width: 398px;
+            height: 75px;
+            @include text ('Barlow', normal, 400, 15px, 25px, #FEFCF7)
+        }
+    }   
+}
+
+
+@media only screen and ( max-width: 400px) {
+    .hero {
+        width: 327px;
+        height: 500px;
+        padding: 100px 24px 99px 24px;
+        text-align: center;
+        background-image: url("../../images/mobile-hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+
+        &__title {
+            margin: 0;
+            margin-bottom: 24px;
+            width: 279px;
+            height: 81px;
+            @include text ('Fraunces', normal, 800, 40px, 40px, #FEFCF7)
+        }
+
+        &__text {
+            margin: 0;
+            margin-bottom: 40px;
+            width: 279px;
+            height: 101px;
+            @include text ('Barlow', normal, 400, 15px, 25px, #FEFCF7)
+        }
+
+        &__link {
+            width: 217px;
+            height: 56px;
+            padding: 15px 31px;
+            text-decoration: none;
+            background-color: $blue;
+            border-radius: 10px;
+            @include text ('Fraunce', normal, 800, 18px, 25px,  #FEFCF7)
+        }
+    }
+  
+}

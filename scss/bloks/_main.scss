@@ -1,0 +1,124 @@
+.site-main {
+    margin: 0;
+    margin-bottom: 200px;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 86px;
+        @include text ('Fraunces',  normal, 900, 24px, 32px, #83888F)
+    }
+
+    &__rule {
+        margin-bottom: 86px;
+    }
+
+    &__linker {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        margin-right: 95px;
+    }
+
+
+    &__number {
+        margin: 0;
+        margin-bottom: 38px;
+        width: 90px;
+        height: 72px;
+        @include text ('Fraunces', normal, 900, 72px, 72px, #FDD6BA)
+    }
+
+    &__ltitle {
+       margin: 0;
+       margin-bottom: 42px; 
+       width: 255px;
+       height: 73px;
+       @include text ('Fraunces', normal, 900, 32px, 36px, #333D4B)
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 64px;
+        width: 285px;
+        height: 130px;
+        @include text ('Barlow', normal, 400, 16px,  26px,  #333D4B)
+    } 
+}
+
+@media only screen and ( max-width:800px) {
+    .site-main {
+       &__rule {
+        width: 497px;
+        height: 2px;
+       }
+
+       &__link {
+        margin-right: 10px;
+       }
+
+       &__number {
+        margin: 0;
+        margin-bottom: 38px;
+        width: 90px;
+        height: 72px;
+        @include text ('Fraunces', normal, 900, 72px, 72px, #FDD6BA)
+        }
+
+       &__ltitle {
+        margin: 0;
+        margin-bottom: 42px; 
+        width: 223px;
+        height: 65px;
+        @include text ('Fraunces', normal, 900, 28px, 32px, #333D4B)
+       }
+
+       &__text {
+        margin: 0;
+        margin-bottom: 64px;
+        width: 223px;
+        height: 154px;
+        @include text ('Barlow', normal, 400, 15px,  25px,  #333D4B)
+       } 
+    }
+}
+
+@media only screen and ( max-width:400px) {
+    .site-main {
+        width: 327px;
+        height: 1116px;
+        margin-bottom: 120px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__linker {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__link {
+            align-items:center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        &__rule {
+            display: none;
+        }
+
+        &__lastlink {
+            margin-left: 60px;
+        }
+
+    }
+}
