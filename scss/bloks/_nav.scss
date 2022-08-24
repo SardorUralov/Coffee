@@ -1,5 +1,4 @@
 .site-nav {
-   margin: 0;
 
    &__item {
     margin: 0;
@@ -40,6 +39,7 @@
 
 @media only screen and ( max-width: 800px) {
    .site-nav {
+      width: 689px;
        
       &__item {
          margin: 0;
@@ -79,10 +79,13 @@
 
 @media only screen and ( max-width:400px ) {
    .site-nav {
+      width: 375px;
 
       &__item {
+         width: 335px;
          margin: 0;
          margin-top: 115px;
+         padding: 0;
          display: flex;
          flex-direction: column;
          background-image: url(../images/nav-background.svg);
@@ -105,10 +108,6 @@
          display: flex;
          text-align: center;
          list-style-type: none;
-      }
-
-      &__img {
-         margin: 0 auto;
       }
    }
 }

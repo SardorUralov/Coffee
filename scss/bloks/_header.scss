@@ -1,6 +1,7 @@
 .site-header {
-    margin: 0;
+    width: 1280px;
     margin: 44px 0;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between; 
 
@@ -9,13 +10,11 @@
     }
 
     &__menu {
-        margin: 0;
         list-style: none;
         display: flex;  
     }
 
     &__link {
-        margin: 0;
         padding-left: 33px;
         text-decoration: none;
         @include text ('Barlow', normal, 700, 12px, 15px, #83888F)
@@ -39,10 +38,10 @@
 
 @media only screen and ( max-width:400px ) {
     .site-header {
-        width: 357px;
+        width: 347px;
         height: 18px;
         display: flex;
-        justify-content: space-between;
+        padding: 0;
         align-items: center;
         
 
@@ -51,8 +50,9 @@
             height: 18px;
         }
 
+        
         &__logom {
-            margin-left: 70px;
+            margin-left: 90px;
             display: flex;
         }
 

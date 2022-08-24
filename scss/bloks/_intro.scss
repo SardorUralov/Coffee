@@ -1,5 +1,4 @@
 .intro {
-    margin: 0;
     margin-bottom: 351px;
     position: relative;
     width: 1280px;
@@ -69,7 +68,7 @@
 
 @media only screen and ( max-width:800px) {
     .intro {
-        margin: 0;
+        width: 688px;
         margin-top: 40px;
         margin-bottom: 391px;
         position: relative;
@@ -112,7 +111,7 @@
         }
     
         &__link {
-            margin: 0;
+            margin-left: 1px;
             margin-top: 24px;
             list-style: none;
             width: 573px;
@@ -152,6 +151,7 @@
 
 @media only screen and (max-width:400px) {
     .intro {
+        width: 327px;
         margin: 0;
         margin-top: 40px;
         margin-bottom: 717px;

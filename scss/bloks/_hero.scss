@@ -1,5 +1,6 @@
 .hero {
-    margin: 0;
+    width: 1280px;
+    height: 600px;
     padding: 110px 702px 116px 85px;
     background-image: url("../images/coffee-back.png");
     background-repeat: no-repeat;
@@ -7,7 +8,6 @@
     border-radius: 10px;
 
     &__title {
-        margin: 0;
         margin-bottom: 39px;
         width: 493px;
         height: 145px;
@@ -15,7 +15,6 @@
     }
 
     &__text {
-        margin: 0;
         margin-bottom: 56px;
         width: 445px;
         height: 78px;
@@ -50,7 +49,6 @@
         border-radius: 10px;
 
         &__title {
-            margin: 0;
             margin-bottom: 24px;
             width: 329px;
             height: 97px;
@@ -58,7 +56,6 @@
         }
 
         &__text {
-            margin: 0;
             margin-bottom: 40px;
             width: 398px;
             height: 75px;
@@ -80,7 +77,6 @@
         border-radius: 10px;
 
         &__title {
-            margin: 0;
             margin-bottom: 24px;
             width: 279px;
             height: 81px;
@@ -88,7 +84,6 @@
         }
 
         &__text {
-            margin: 0;
             margin-bottom: 40px;
             width: 279px;
             height: 101px;
